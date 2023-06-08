@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Gasoek+One&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Condensed&display=swap');
+@media only screen and (min-width: 720px) {
+    /* For mobile phones: */
+    .whole{
+      width: 100%;
+      height: 100%;
+    }
+    .content{
+        background-image: url(images/er.png);
+        background-repeat: no-repeat;
+        height: 28%;
+        width: 100%;
+    }
+  }
+.pictures{
+  background-color: #ffffff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/background2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: back;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background:transparent;
+    display: flex;
+    align-items: center;
+   
+}
+nav .name_of_school{
+    color:#fff;
+    font-family:'poppins' , sans-serif;
+    font-weight: 900;
+    padding: 0 2rem;
+    flex: 1;
+    font-size: 25px;
+}
+.school_logo{
+    margin-left: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+nav a{
+    
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'poppins' , sans-serif;
+    padding: 1rem 1rem;
+}
+nav a:hover{
+    background-color: #a6a6a6;
+}
+ul{
+    font-family: 'poppins' , sans-serif;
+    display: flex;
+    gap: 60px;
+}
+ul li{
+    list-style: none;
+    padding: 15px;
+}
+ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    transition: 0.5s ease;
+}
+ul:hover li a {
+    color: rgb(0, 0, 0);
+}
+ul:hover li a:not(:hover) {
+    color: rgb(255, 255, 255);
+    opacity: 0.3;
+    filter: blur(1px);
+}
+.dropdown{
+    position: relative;
+    display: inline;
+}
+
+
+.ltc{
+    list-style: none;
+    display: flex;
+    font-size: 40px;
+    gap: 20px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+.school_name{
+    height: 450px;
+    width: 100%;
+    padding: 50px;
+    
+    animation-name: sn;
+    animation-duration: 1s;
+    animation-direction: normal;
+}
+@keyframes sn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.w{
+    color: white;
+    font-size: 30px;
+    font-family: 'poppins' , sans-serif;
+    letter-spacing: 3px;
+    
+}
+h2{
+    color: white;
+    font-size:70px;
+    font-weight: 900;
+    font-family: 'Gasoek One', sans-serif;
+    -webkit-text-stroke: green 1px;
+}
+
+.pub{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 20px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+.app{
+    font-family: 'poppins' , sans-serif;
+    background:transparent;
+    padding: 10px 70px 10px 70px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius:20px ;
+    border: 2px solid yellow;
+    transition: 0.7s;
+}
+.app:hover{
+    font-family: 'poppins' , sans-serif;
+    background-color:green;
+    padding: 10px 70px 10px 70px;
+    color:  #ffc107;
+    text-decoration: none;
+    transition: 0.7s;
+}
+.content2{
+    width: 100%;
+}
+.event-container {
+    font-family: "Roboto", sans-serif;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: rgb(204, 204, 204);
+  }
+  
+  .event-container h4.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+  }
+  
+  .event-container .event {
+    box-shadow: 0 10px 20px -8px rgba(64, 255, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event .event-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ff22;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event .event-right h4.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event .event-right .event-timing {
+    background: #616161;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event .event-right .event-timing img {
+   
+    padding-right: 9px;
+  }
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }
+
+@keyframes slide{
+    0%{
+        transform: translatex(0);
+    }
+    25%{
+        transform: translatex(0);
+    }
+    30%{
+        transform: translatex(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+}
+img{
+    width: 100%;
+}
+video{
+    height: 80%;
+    width: 100%;
+    background-image:url(images/lc.jpg) ;
+}
+   
+.ev{
+height: 100%;
+will-change: 100%;
+}
+
+footer{
+        background-color:green;
+    }
+    .term{
+        position: absolute;
+        padding: 50px ;
+        padding-right: 100px;
+        right: 10px;
+        font-family: 'poppins' , sans-serif;
+        font-size: 18px;
+      }
+      .term .tu{
+      color: whitesmoke;
+      text-decoration: none;
+      }
+      .tu:hover{
+        text-decoration: underline;
+      }
+.fpic{
+    height: 100%;
+    width: 100%;
+}
+.con{
+   position: absolute;
+}
+.cu{
+    color: white;
+}
+input{
+  display: none
+}
+.container{
+  width: 100%;
+  text-align: center;
+}
+.top-content{
+  background-color: #e9e9e9;
+  width: 90%;
+  margin: 0 auto 20px  auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+h3{
+  height: 100%;
+  background-color: lightgray;
+  line-height: 60px;
+  padding: 0 50px;
+  color: #222;
+}
+label{
+  display: inline-block;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  transition: .5s;
+}
+label:hover{
+  color: black;
+}
+.photo-gallery{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap:20px;
+}
+.pic{
+  position: relative;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#check1:checked ~ .container .photo-gallery .tc,
+#check1:checked ~ .container .photo-gallery figure{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+
+#check1:checked ~ .container .photo-gallery .faci,
+#check1:checked ~ .container .photo-gallery .staff, 
+#check1:checked ~ .container .photo-gallery .pevents{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+}
+#check2:checked ~ .container .photo-gallery .faci{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+#check2:checked ~ .container .photo-gallery .tc,
+#check2:checked ~ .container .photo-gallery .staff, 
+#check2:checked ~ .container .photo-gallery .pevents{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+}
+#check3:checked ~ .container .photo-gallery .staff{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+#check3:checked ~ .container .photo-gallery .tc,
+#check3:checked ~ .container .photo-gallery .faci, 
+#check3:checked ~ .container .photo-gallery .pevents{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+}
+#check4:checked ~ .container .photo-gallery .pevents{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+#check4:checked ~ .container .photo-gallery .tc,
+#check4:checked ~ .container .photo-gallery .faci, 
+#check4:checked ~ .container .photo-gallery .staff{
+  opacity: 0;
+  transform: scale(0);
+  position: relative;
+}
